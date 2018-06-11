@@ -10,34 +10,24 @@ package model;
  * @author Davino
  */
 public class Module {
+
     private int moduleID;
-    private int opleidingID;
     private String naam;
-    
-      public int moduleID() {
+
+    public int getModuleID() {
         return moduleID;
     }
 
-    public void setmoduleID(int moduleID) {
+    public void setModuleID(int moduleID) {
         this.moduleID = moduleID;
     }
 
-    public int getopleidingID() {
-        return opleidingID;
-    }
-
-    public void opleidingID(int opleidingID) {
-        this.opleidingID = opleidingID;
-    }
-
-    public String naam() {
+    public String getNaam() {
         return naam;
     }
 
-    public void setnaam(String naam) {
+    public void setNaam(String naam) {
         this.naam = naam;
     }
-    
 
-    
 }

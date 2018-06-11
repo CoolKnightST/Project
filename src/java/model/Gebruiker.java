@@ -1,11 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
-
-import java.sql.Date;
 
 /**
  *
@@ -13,21 +6,40 @@ import java.sql.Date;
  */
 public class Gebruiker {
    
-    private int gebruikerID;
+    //beveiligingsupdate, schakel over naar jsonID
+    private transient int gebruikerID;
+    //private int gebruikerID;
+    private int jsonID;
     private String rol;
-    private String voorNaam;
+    private String voornaam;
     private String achternaam;
-    private Date geboorteDatum;
+    private String naam;
+    private String geboorteDatum;
     private String email;
     private String login;
     private String paswoord;
     private boolean geldig;
 
+    public String getNaam() {
+        return naam;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
+
+
+    public int getJsonID() {
+        this.jsonID = gebruikerID * 4;
+        return jsonID;
+    }
+    
     public int getGebruikerID() {
         return gebruikerID;
     }
 
     public void setGebruikerID(int gebruikerID) {
+        this.jsonID = gebruikerID * 4;
         this.gebruikerID = gebruikerID;
     }
 
@@ -40,11 +52,11 @@ public class Gebruiker {
     }
 
     public String getVoorNaam() {
-        return voorNaam;
+        return voornaam;
     }
 
-    public void setVoorNaam(String voorNaam) {
-        this.voorNaam = voorNaam;
+    public void setVoorNaam(String voornaam) {
+        this.voornaam = voornaam;
     }
 
     public String getAchternaam() {
@@ -55,11 +67,11 @@ public class Gebruiker {
         this.achternaam = achternaam;
     }
 
-    public Date getGeboorteDatum() {
+    public String getGeboorteDatum() {
         return geboorteDatum;
     }
 
-    public void setGeboorteDatum(Date geboorteDatum) {
+    public void setGeboorteDatum(String geboorteDatum) {
         this.geboorteDatum = geboorteDatum;
     }
 

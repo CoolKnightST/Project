@@ -1,16 +1,41 @@
 package model;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Score: de score die een cursist krijgt.
+ * 
+ * @author Keanu en Gil
  */
 
-/**
- *
- * @author CURSIST
-hier komt de score
-*/
+ //Objecten aanmaken
 public class Score {
+    private String voornaam;
+    private String achternaam;
+    private double score;
+
+    public String getVoornaam() {
+        return voornaam;
+    }
+
+    public void setVoornaam(String voornaam) {
+        this.voornaam = voornaam;
+    }
+
+    public String getAchternaam() {
+        return achternaam;
+    }
+
+    public void setAchternaam(String achternaam) {
+        this.achternaam = achternaam;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+    
+    
     
 }

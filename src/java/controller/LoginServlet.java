@@ -19,7 +19,8 @@ import model.GebruikerDAO;
  */
 public class LoginServlet extends HttpServlet {
 
-     public void doGet(HttpServletRequest request, HttpServletResponse response)
+     
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, java.io.IOException {
 
         try {
@@ -34,7 +35,7 @@ public class LoginServlet extends HttpServlet {
             if (gebruiker.isGeldig()) {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("currentSessionUser", gebruiker);
-                response.sendRedirect("Menu.jsp"); //logged-in page      		
+                response.sendRedirect("BeginMenu.jsp"); //logged-in page      		
             } else {
                 response.sendRedirect("InvalidLogin.jsp"); //error page 
             }
@@ -42,4 +43,5 @@ public class LoginServlet extends HttpServlet {
             System.out.println(theException);
         }
     }
+   
 }

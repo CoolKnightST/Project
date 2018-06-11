@@ -1,0 +1,51 @@
+GebruikersOverzicht: als je op edit klikt, en dan sorteert staat de persoon die je edit als eerste of laatste en niet op de juiste plaats
+GebruikersOverzicht: indien je probeert een nieuwe gebruiker toe te voegen kan je de rol niet kiezen
+Gebruikersoverzicht: bij edit staat de rol altijd op admin en niet op de rol van de persoon
+Gebruikersoverzicht: als je op edit klikt en verwisseld van persoon onthoud het de geboortedatum van de personen, indien je dan klikt op vorige/volgende pagina verandert de geboortedatum van de persoon dat je edit.
+Gebruikersoverzicht: sorteren op geboortedatum word gedaan op dag en niet op jaar.
+Gebruikersoverzicht: als je op edit klikt word je terug naar de eerste X aantal mensen, als je iemand van de 2de/3de pagina wilt editten moet je terug naar pagine 2/3
+
+Modules: toont alle modules en zegt 8/55.
+
+Doelstelling: proberen te editten toont niets meer, indien je terug naar de pagina gaat toont hij de edit versie maar toont geen gele lijn.
+Doelstelling: volgende pagina knop werkt niet goed.
+Doelstellingen: Klikken op een checkbox van kerndoelstelling maakt het onzichtbaar. doestellingen is niet meer belangrijk.
+
+kijken of alle atributen verwijderd worden uit de sessie
+
+Type Score: kan geen waarde invullen.
+
+
+https://www.chromestatus.com/feature/5636954674692096
+
+
+/**
+* OPMERKINGEN 
+**/
+
+*** probleem 1 ***
+
+    #vaststelling
+    .99 Opacity op alle elementen is een manier om de z-index te manupuleren.
+
+    #voor-na-delen
+    + z-index werkt via de stapel logical en de waarde bepaald welk element eerst staat
+    - Het verbruikt veel CPU
+
+    #alternatieven
+    flex/grid design met order styling
+    beperkingen toevoegen en meer elementen scheiden en laten zien als frames
+
+    #besluit
+    CPU verbruik moet worden gecontroleerd om te zien of een alternatief noodzakelijk wordt.
+
+ //opemrking aaron: kan het zijn dat het cpu verbruik zo hoog is omdat we chrome gebruiken?
+
+*** probleem 2 ***
+
+    #vaststelling
+    als je een value aanpast met java (zoals zoekterm) word deze waarde op de pagina niet aangepast, enig idee hoe we dit oplossen?
+
+
+
+<!--<pre>${sessionScope.test}</pre>-->

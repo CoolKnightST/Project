@@ -1,0 +1,41 @@
+/*
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table tbody {
+    overflow: scroll;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #f8f6ff;
+}
+table th {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #ec6e24;
+    
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+    padding-left: 40px;
+    
+    font-weight: unset;
+    padding-right: 10px;
+    
+    text-align: left;
+}
+
+table td {
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.4;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+
+    font-weight: unset;
+    padding-right: 10px;
+}
+*/
